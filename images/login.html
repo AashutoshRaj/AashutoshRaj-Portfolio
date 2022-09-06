@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- fonts --> 
+        <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">        
+        <link rel="stylesheet" href="css/font-awesome.css" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" /> 
+        <link rel="stylesheet" href="css/app.css" />
+               
+        <title>NationalBonds-Login</title>
+</head>
+<body>
+ 
+                     
+ <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#"><img src="images/NBlogo.svg" alt="National Bonds"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Personal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Prestige</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " href="#">Bussiness</a>
+              </li>
+                    <li class="nav-item">
+                <a class="nav-link " href="#">Personal Planning</a>
+              </li>
+            </ul>
+              <div class="d-flex my-2 my-lg-0 userLoged">
+                  <span class="nbUser"><img src="images/user-pic.png" width="44" height="44" /></span><p class="pt-1"> Hani houssein</p>
+                </div>
+
+          </div>
+        </nav>
+    <section id="loginPage">
+        <div class="pagebefore"></div>
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-12 p-0">
+                 <div class="heading">
+                        <h4>Welcome to e-Nbc</h4>
+                        <p>Enter your username and password below to proceed</p>
+                    </div>
+               </div>
+           </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-5 p-0 leftContentOuter">                   
+                     <div class="leftContent">
+                         <h2>Sign up<span>Sign Up</span></h2>
+                         <p>If you are an existing National Bond Account holder, click below to create your log in ID and password</p>
+                         <button class="nb-btn">NBC Customer</button>
+                         <p>Register below to experience the convenience of NBC Online.</p>
+                         <button class="nb-btn">New to NBC</button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-7 p-0">
+                     <div class="rightContent">
+                         <img src="images/u72.png" alt="DubaiID" />
+                         <p>DubaiID enables customers to have one single sign-on to all the eServices provided by Dubai Government entities and interact with them using one account only. Please login with your DubaiID by clicking here to pull your Emirates ID details.</p>
+                        <button class="nb-btn">Sign In</button>
+                         <div class="loginFrm"><h3>Sign In<span>Sign In</span></h3>
+							  
+ 
+                               
+                                <div class="loginFrom">
+                                      <form id="contact-form" class="form" action="#" method="POST" role="form">
+                                          <div class="form-group">
+                                              <label class="form-label" for="name">Username</label>
+                                              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your login ID" tabindex="1" required>
+                                          </div>                            
+                                          <div class="form-group pswd">
+                                              <label class="form-label" for="password">Password</label>
+                                              <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" tabindex="2" required/>
+                                              <i id="#password-field"><img src="images/pw-show-icon.svg" /></i>
+                                                             
+                                          </div>                            
+                                          <div class="d-flex justify-content-between">
+                                          <div>
+                                            
+                                            <div class="form-check">
+                                              <input type="checkbox" class="form-check-input" id="materialLoginFormRemember">
+                                              <label class="form-check-label text-secondary" for="materialLoginFormRemember">Remember me</label>
+                                            </div>
+                                          </div>
+                                          <div>
+                                         
+                                            <a href="forgotpassword.html">Forgot password?</a>
+                                          </div>
+                                      </div>
+
+                                          <div class="text-left">
+                                              <button type="submit" class="nb-btn">Sign in</button>
+                                          </div>
+                                      </form>
+                                    </div>
+						 
+					 </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    <script>
+$(document).ready(function(){    
+
+   var ww = $(document).width();
+   var ld= $(".leftContentOuter").width();
+   var cd= $(".container").width();
+  
+   var gh = (ww - cd - 30)/2;
+   var fw = gh + ld;
+   
+  $(".pagebefore").width(fw);
+     
+    $(window).resize(function(){
+
+   var ww = $(document).width();
+   var ld= $(".leftContentOuter").width();
+   var cd= $(".container").width();
+  
+   var gh = (ww - cd - 30)/2;
+   var fw = gh + ld;
+   
+  $(".pagebefore").width(fw);
+    });
+});
+</script>
+</body>
+</html>

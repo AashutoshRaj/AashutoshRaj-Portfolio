@@ -1,0 +1,59 @@
+/*********** font ***********/
+//@mixin font-face(folder name, file name,style,font weight)
+@mixin font-face($familyname, $fname, $style, $weight: 300){
+    $filepath: "../fonts/" + $familyname + "/" + $fname;
+    @font-face {    font-family: "#{$familyname}";
+                    src: url($filepath + ".eot");
+                    src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf")  format('truetype'), url($filepath + ".svg#" + $familyname + "            ") format('svg');
+                    font-weight: $weight;
+                    font-style: $style
+                }
+}
+/*********** radius ************/
+@mixin radius($radius:100%)
+{
+	-webkit-border-radius:$radius!important;
+	-ms-border-radius:$radius!important;
+	-moz-border-radius:$radius!important;
+	border-radius:$radius!important;
+}
+/************** Shadow ************/
+@mixin shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+/******** Button *********/
+@mixin button($bgColor:$primaryColor,$textColor:$blackColor,$fontSize:16px,$padding:10px 25px) {
+  background: $bgColor;
+  color:$textColor;
+  font-size: $fontSize;
+  padding:$padding;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+     &:hover {
+     background-color:$bannerBtnBgHoverColor;
+         @include transition(all, 0.5s, ease, 0s);
+  }
+}
+/******** Transition *********/
+@mixin transition($property, $duration, $function, $delay) 
+{
+ transition: $property $duration $function $delay;
+ -webkit-transition:$property $duration $function $delay;
+-moz-transition:$property $duration $function $delay;
+-o-transition:$property $duration $function $delay;
+ }
+
+
+/*******summeryDetailsTime Style*********/
+

@@ -1,0 +1,389 @@
+#tobBanner
+{
+    background-image: url(../../../images/topBanner1.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 0px;
+    max-height: 967px;
+    box-shadow: 0 0 20px 0px #014a58;
+    border-radius: 0px;
+    background-attachment: fixed;
+    overflow: hidden;
+   
+   .menus
+    {
+        position: fixed;
+    width: 100%;
+    /* max-width: 1503px; */
+    width: 100%;
+    z-index: 1;
+    left: 0;
+        
+    }
+    .bannerText
+    {
+        position: absolute;
+        top: 350px;
+        left: 0;
+        height: 200px;
+        z-index: 2;
+        width: 500px;
+        .text
+        {
+            line-height: 73px;
+//            max-width: 720px;
+//            width: 100%;
+//            position: absolute;
+//              width: 450px;
+//              left: 50%;
+//              margin-left: -225px;
+//              height: 40px;
+//              top: 50%;
+//              margin-top: -20px;
+            p
+            {
+//                display: inline-block;
+//                  vertical-align: top;
+                  margin: 0;
+                font-size: 70px;
+                font-weight: 800;
+                .word {
+                  position: absolute;
+//                  width: 220px;
+                  opacity: 0;
+                }
+            }
+            .letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
+        }
+      .subTitleLine
+        {
+            margin-top: 6em;
+            p
+            {
+                font-size: 28px;
+                color: $whiteColor;
+            }
+        }
+        .socialIcons 
+            {
+                margin-top: 21px;
+                a
+                {
+                    margin: 14px;   
+                }
+            }
+    }
+    .selfPhoto
+    {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 150px;
+//        img{height: 84vh;}
+    }
+    
+}
+
+/*About Me Style*/
+
+#aboutMe
+{
+    min-height: 967px;
+    display: flex;
+    align-items: center;
+    .description
+    {
+        p
+        {
+          color: #ada6a6;
+            font-size: 21px;
+            width: 85%;
+            margin: 0 auto;
+            text-align: center; 
+            font-stretch: normal;
+            line-height: 41px;
+            letter-spacing: 2.25px;
+            text-align: justify;
+            font-weight: 300;
+            span{color:$primaryColor;}
+        }
+    }
+    .skills
+    {
+        position: relative;
+        &:after {
+            content: 'SKILLS';
+            position: absolute;
+            COLOR: #f8326e;
+            top: -87px;
+            right: 0;
+            writing-mode: vertical-rl;
+            text-orientation: unset;
+            font-size: 130px;
+            /* font-weight: bolder; */
+            letter-spacing: 55px;
+            z-index: -1;
+            opacity: 0.4;
+            font-family: 'Monoton', cursive;
+        }
+        .card
+        {
+            background-color: transparent;
+            .card-body
+            {
+               i {
+                    font-size: 50px;
+                    color: #0581a1;
+                }
+              .card-title
+                {
+                    font-size: 30px;
+                  color: #ada6a6;
+                    font-weight: 500;
+                }
+                .card-text
+                {
+                    color: #ada6a6;
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+/*About Me Style Close*/
+
+/********************My WOrk **********************/
+#myWork
+{
+    margin-bottom: 80px;
+    min-height: 967px;
+    display: flex;
+    align-items: center;
+    .projectLinks
+    {
+        figure.snip1205 {
+  position: relative;
+  float: left;
+  overflow: hidden;
+//  margin: 10px 1%;
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+  background: #000000;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+figure.snip1205 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+figure.snip1205 img {
+  max-width: 100%;
+  vertical-align: top;
+    width:100%;
+}
+figure.snip1205 i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  font-size: 34px;
+  color: #000000;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+figure.snip1205 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+figure.snip1205.blue {
+  background-color: #2472a4;
+}
+figure.snip1205.blue i {
+  color: #20638f;
+}
+figure.snip1205.red {
+  background-color: #ab3326;
+}
+figure.snip1205.red i {
+  color: #962d22;
+}
+figure.snip1205.yellow {
+  background-color: #e08e0b;
+}
+figure.snip1205.yellow i {
+  color: #c87f0a;
+}
+figure.snip1205.green {
+  background-color: #229955;
+}
+figure.snip1205.green i {
+  color: #1e8449;
+}
+figure.snip1205.orange {
+  background-color: #d67118;
+}
+figure.snip1205.orange i {
+  color: #bf6516;
+}
+figure.snip1205.navy {
+  background-color: #2b3c4e;
+}
+figure.snip1205.navy i {
+  color: #222f3d;
+}
+figure.snip1205:hover img,
+figure.snip1205.hover img {
+  opacity: 0.3;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+figure.snip1205:hover i,
+figure.snip1205.hover i {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/* Demo purposes only */
+ }
+}
+/********************My WOrk  Style close**********************/
+
+
+/********************resume **********************/
+
+#resume
+{
+   padding: 80px 0;
+    background: #0e0e0e; 
+    .resumeDownld
+    {
+        p{font-size: 66px;
+        font-weight: 800;
+        text-transform: capitalize;}
+        .btnDownload
+        {
+            position: relative;
+            max-width: 320px;
+            button.downBtn {
+               border: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-56%,-55%);
+               width: 164px;
+                height: 164px;
+                border-radius: 50%;
+                font-size: 21px;
+                font-weight: 700;
+                background: #0581a1;
+                color: #fff;
+                box-shadow: 0 0 16px 6px #000;
+                transition: 1s;
+                &:hover{box-shadow: 0 0 16px #1b8ca9;}
+                &:focus{outline: 0}
+            }
+            img{max-width: 325px;
+                width: 100%;}
+        }
+    }
+}
+/********************resume  Style close**********************/
+
+#contactMe
+{
+    max-height: 931px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+//    background-image: url(../../../images/footrbg1.png);
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    background-color: #0e0e0e;
+    .contactDetails
+    {
+        h2
+        {
+            font-weight: 800;
+        }
+       .addressD
+        {
+            p, a{
+            font-size: 16px;color: #343a40;}
+        }
+        ul{li{a{color: #343a40;transition: 0.3s;text-transform: capitalize;&:hover{padding-left: 10px;}}}}
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

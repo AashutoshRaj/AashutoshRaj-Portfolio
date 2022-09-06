@@ -1,0 +1,27 @@
+/*variables Font */
+@import 'inc/variables';
+/*Load mixin */
+@import 'inc/mixin';
+/*inheritance Font */
+@import 'inc/inheritance';
+/*Load Font */
+@import 'inc/font';
+/*common styles */
+@import 'inc/common';
+/*header styles */
+@import 'inc/header';
+/*Custom styles */
+@import 'inc/pages';
+/*Custom styles */
+@import 'inc/custom';
+/*footer styles */
+@import 'inc/footer';
+/*themes styles */
+@import 'inc/themes';
+/*responsiveness style*/
+@import 'inc/responsiveness';
+
+/*Dashboard style*/
+@import 'inc/dashboard';
+
+@import 'inc/dashboardLanding';

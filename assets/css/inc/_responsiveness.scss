@@ -1,0 +1,69 @@
+@media screen and (min-width:2000px)
+{
+    #tobBanner{box-shadow: 0 0 20px 0px #014a5800;border-radius: 0px;max-width: 100%;} 
+}
+@media screen and (max-width:1200px) and (min-width:992px)
+{
+    #aboutMe .skills .card .card-body img {width: 40px;height: 40px;}
+//    #tobBanner .menus{width: 95%;}
+}
+
+@media screen and (max-width:1024px)
+{
+ #resume .resumeDownld p {font-size: 30px;}
+  
+}
+@media screen and (max-width:990px)
+{
+//  .webp .bg-plan-cards {background-size: 100% 43%;} 
+    
+}
+@media screen and (max-width:767px)
+{
+   div#collapsibleNavbar {
+    background: black;
+    padding-left: 8px;
+}  
+}
+@media screen and (min-width:320px) and(max-width:767px)and (orientation: landscape)
+{
+   #tobBanner .bannerText {
+    position: absolute;
+    top: 155px;
+    left: 0;
+    height: 200px;
+    z-index: 2;
+    width: 500px;
+    /* z-index: -1; */
+}
+  #tobBanner .selfPhoto {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 29px;
+}  
+}
+@media screen and (max-width:575px)
+{
+  #tobBanner .bannerText {background: #0000008c;left: 50%;width: 100%;transform: translate(-50%, -50%);padding: 0 7px;}
+    #tobBanner .bannerText .text p {font-size: 43px;}
+    #tobBanner .bannerText .text {line-height: 50px;}
+    #tobBanner .bannerText .subTitleLine p {font-size: 19px;}
+  #tobBanner .bannerText .subTitleLine {margin-top: 3em;}
+    .heading h2 span {font-size: 69px;}
+    
+  
+}
+
+@media screen and (max-width:531px)
+{
+   
+}
+
+@media screen and (max-width:365px)
+{
+   .heading h2 span {
+    font-size: 58px;
+}
+   
+}
